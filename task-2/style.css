@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+
+  color: #868192;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 13px;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #dbd7e1;
+}
+::-webkit-scrollbar-thumb {
+  background: #006eb6;
+  border-radius: 10px;
+}
+
+.main {
+  background: #fff;
+  padding: 30px 10px;
+}
+.carts {
+  overflow: auto;
+  white-space: nowrap;
+}
+.cart {
+  background: #f2f4f7;
+  padding: 5px;
+  width: 340px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.cartTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+
+.cartTitle span {
+  height: 17px;
+  width: 15px;
+  display: inline-block;
+  border-radius: 15px 0 0 15px;
+  vertical-align: sub;
+  margin-right: 3px;
+}
+.cart:nth-child(1) .cartTitle span {
+  background: #d21010;
+}
+.cart:nth-child(2) .cartTitle span {
+  background: #00b5ff;
+}
+.cart:nth-child(3) .cartTitle span {
+  background: #ffe700;
+}
+.totalCount {
+  background: #e4e4e4;
+  padding: 2px 6px;
+  display: inline-block;
+  border-radius: 3px;
+}
+.items {
+  max-height: 600px;
+  overflow: auto;
+  white-space: nowrap;
+}
+.item {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+.itemImg {
+  height: 28px;
+  width: 28px;
+  border-radius: 100%;
+}
+.profileItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profileItem h6 {
+  display: flex;
+}
+.profileItem a {
+  display: inline-block;
+  margin: 5px;
+  color: #868192;
+  font-weight: 900;
+  font-size: 12px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.content p:last-child {
+  color: #868192;
+  background: #e4e4e4;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.contentDetails {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  align-items: center;
+  font-size: 12px;
+}
+.likeCount {
+  background: #e4e4e4;
+  height: 28px;
+  width: 28px;
+  border-radius: 100%;
+  align-items: center;
+  text-align: center;
+  display: inline-grid;
+}
+.fileUpload {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #00000075;
+  align-items: center;
+}
+.fileUpload form {
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  min-height: 150px;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.fileUpload form span {
+  color: #868192;
+  display: block;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+.fileUpload form input[type="file"] {
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.fileUpload form input[type="button"] {
+  background: #005fc4;
+  color: #fff;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 5px;
+}
+#uploadPreview {
+  max-height: 300px;
+  overflow: auto;
+}
